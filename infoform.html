@@ -1,0 +1,77 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>Aanvraag formulier voor meer informatie</title>
+        <link href="https://fonts.googleapis.com/css?family=Ewert" rel="stylesheet">
+        <link rel="stylesheet" type="text/css" href="./CSS/styles.css">        
+    </head>
+    <body>
+        <header>
+            <h1>Stoom treinen!</h1>
+            <hr>
+            <nav>
+                <ul class="nav-list">
+                    <li class="nav-list"><a href="./index.html">Home</a></li>
+                </ul>        
+            </nav>
+            <hr>
+        </header>
+        <main>
+            <header>
+                <h2>Informatie aanvraag formulier</h2>
+            </header>
+            <form name="infoform" methode="POST" data-netlify="true">
+                <p>
+                    <label for="name">Naam:<sup>*</sup></label>
+                    <input type="text" id="name" name="naam" required>
+                </p>
+                <p>
+                    <label for="email">Email:<sup>*</sup></label>
+                    <input type="text" id="email" name="email" required>
+                </p>
+                <p>
+                    Favoriete type stoomtreinen:<br>
+                    <input type="checkbox" id="fav_america" name="type1" value="america"><label for="fav_america">Amerikaans</label>
+                    <input type="checkbox" id="fav_duits" name="type2" value="duits"><label for="fav_duits">Duits</label>
+                    <input type="checkbox" id="fav_engels" name="type3" value="engels"><label for="fav_engels">Engels</label>
+                </p>
+                <p>
+                    <label for="train_color">Favoriete kleur van de trein:</label>
+                    <input type="color" id="train_color" name="trein_kleur">
+                </p>
+                <p>
+                    Over welke trein wil je informatie?<sup>*</sup><br>
+                    <input type="radio" id="info_america" name="country" value="america"><label for="info_america">Amerikaans</label>
+                    <input type="radio" id="info_duits" name="country" value="duits"><label for="info_duits">Duits</label>
+                    <input type="radio" id="info_engels" name="country" value="engels"><label for="info_engels">Engels</label><br>
+                    <select id="train_type" name="train_type">
+                        <option value="bigboy">Big Boy</option>
+                        <option value="br01">BR01</option>
+                        <option value="br03_1010">BR03 1010</option>
+                        <option value="br10">BR10</option>
+                        <option value="br18">BR18</option>
+                        <option value="mallard">Mallard</option>
+                    </select>
+                </p>
+                <p>
+                    <label for="info_need">Welke informatie heb je nodig?<sup>*</sup></label><br>
+                    <textarea id="info_need" name="info_need" cols="30" rows="10" maxlength="352" required></textarea><br>
+                    <sup>Max 352 tekens</sup>
+                </p>
+                <p>
+                    <label for="fav_train_website">Url naar je favoriete trein website </label>
+                    <input type="url" id="fav_train_website" name="fav_train_website" value="http://...">
+                </p>
+                <p><sup>*</sup> = verplicht</p>
+                <p>
+                    <button type="reset">Reset</button>
+                    <button type="submit" value="submit">Verzenden</button>
+                </p>
+            </form>
+        </main>
+        <footer>
+            <hr>
+            <label>This site is made by RP!</label>      
+        </footer>
+    </body>
+</html>
