@@ -1,0 +1,198 @@
+body{
+    width: 382px;
+    margin: 0 auto;
+    background-color:blanchedalmond;
+    font-size: 1.5em;
+}
+
+select{
+    font-size: 1em;
+}
+
+h1{
+    font-family: 'Ewert', Geneva, Verdana, sans-serif;
+    text-align: center;
+    margin: 0;
+    padding: 0;
+    font-size: 2.75em;
+}
+
+h2{
+    text-align: center;
+}
+
+hr.title{
+    width: 50%;
+}
+
+hr.nav{
+    width: 75%;
+}
+
+footer{
+    text-align: center;
+    font-size: small;
+}
+
+img{
+    width: 378px;
+    border: 2px solid black;
+}
+
+figure{
+    margin: 0;
+}
+
+iframe{
+    width: 378px;
+    height: 215px;
+    border: 2px solid black;
+}
+
+form{
+    margin-left: 50px;
+}
+
+textarea{
+    resize: none;
+}
+
+.nav-list{
+    width: auto;
+    padding: 0 10px;
+    display: inline;
+}
+
+.homepage_image{
+    width: 382px;
+    border: none;
+}
+
+.bron{
+    font-size: small;
+}
+
+.gallery{
+    text-align: center;
+    line-height: 1.5em;
+}
+
+.gallery_link{
+    text-decoration: none;
+    color: black;
+}
+
+.gallery_link:visited{
+    color: blue;
+}
+
+.gallery-nav-list{
+    text-align: center;
+    list-style: none;
+    display: block;
+    padding: 0 10px;
+    margin: 0;
+    width: auto;
+}
+
+@media screen and (min-width: 768px) {
+    body{
+        width: 768px;
+        font-size: 1.25em;
+    }
+
+    select{
+        font-size: 0.75em;
+    }
+
+    h1{
+        font-size: 4em;
+    }
+
+    hr.nav{
+        width: 75%;
+    }
+
+    footer{
+        font-size: x-small;
+    }
+
+    img{
+        width: 764px;
+        border-radius: 25px;
+    }
+
+    iframe{
+        width: 764px;
+        height: 432px;
+        border-radius: 25px;
+    }
+
+    form{
+        margin-left: 250px;
+    }
+
+    .gallery{
+        font-size: 25px;
+    }
+
+    .gallery-nav-list{
+        display: inline;
+    }
+
+    .german img{
+        width: 45%;
+        margin: 5px;
+        padding: 5px;
+        background-color:lightskyblue;
+    }
+
+    .german iframe{
+        display: inline;
+        width: 382px;
+        height: 215px;
+        padding: 5px;
+        background-color: lightskyblue;
+    }
+
+    .bron{
+        font-size:x-small;
+    }
+}
+
+@media screen and (min-width: 1024px) {
+    body{
+        width: 1024px;
+        font-size: 1em;
+    }
+
+    h1{
+        font-size: 5em;
+    }
+
+    hr.nav{
+        width: 60%;
+    }
+
+    img{
+        width: 1020px;
+    }
+
+    iframe{
+        width: 1020px;
+        height: 576px;
+    }
+
+    form{
+        margin-left: 400px;
+    }
+
+    .german img{
+        width: 27%;
+        background-color: darkgreen;
+    }
+
+    .german iframe{
+        background-color: darkgreen;
+    }
+}
